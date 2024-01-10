@@ -1,0 +1,121 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    /* Use flexbox for layout */
+    height: 100%;
+}
+
+.left-nav {
+    width: 200px;
+    background-color: whitesmoke;
+    padding: 20px;
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    height: 100%;
+}
+
+.left-nav ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    /* Ensure the ul takes full height of left-nav */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: flex-start;
+    /* background-color: lightgrey; */
+}
+
+.left-nav ul li {
+    margin-bottom: 10px;
+}
+
+.left-nav ul li a {
+    text-decoration: none;
+    color: Dark charcoal;
+    display: block;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    height: 100%;
+    /* overflow-y: auto; */
+
+    .item-list .item {
+        margin-bottom: 10px;
+    }
+
+    .add-to-cart-btn {
+        background-color: dodgerblue;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    /* .add-to-cart-btn:hover {
+        background-color: #0056b3;
+    } */
+
+    .card-container,
+    #cart-items {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allows cards to wrap to next line */
+        gap: 20px;
+        /* Spacing between cards */
+    }
+
+    .card,
+    .cart-card {
+        width: 240px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .card-image {
+        height: 150px;
+        object-fit: cover;
+        /* Maintain aspect ratio */
+        border-radius: 8px 8px 0 0;
+        /* Rounded corners for top */
+    }
+
+    .add-to-cart-btn {
+        background-color: Dodger Blue;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .add-to-cart-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .section {
+        display: none;
+    }
+
+    #cart-icon {
+        cursor: pointer;
+    }
